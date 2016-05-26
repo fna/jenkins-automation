@@ -39,6 +39,10 @@ class EnvironmentUtils {
         return getEnv() as Environment == Environment.stage
     }
 
+    boolean isDemo() {
+        return getEnv() as Environment == Environment.demo
+    }
+
 
     String getEnv() {
         try {
